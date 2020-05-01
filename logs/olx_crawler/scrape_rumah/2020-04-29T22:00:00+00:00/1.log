@@ -1,0 +1,27 @@
+[2020-05-01 00:38:14,638] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: olx_crawler.scrape_rumah 2020-04-29T22:00:00+00:00 [queued]>
+[2020-05-01 00:38:14,676] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: olx_crawler.scrape_rumah 2020-04-29T22:00:00+00:00 [queued]>
+[2020-05-01 00:38:14,677] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-05-01 00:38:14,677] {taskinstance.py:880} INFO - Starting attempt 1 of 4
+[2020-05-01 00:38:14,678] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-05-01 00:38:14,747] {taskinstance.py:900} INFO - Executing <Task(BashOperator): scrape_rumah> on 2020-04-29T22:00:00+00:00
+[2020-05-01 00:38:14,753] {standard_task_runner.py:53} INFO - Started process 3251 to run task
+[2020-05-01 00:38:14,980] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: olx_crawler.scrape_rumah 2020-04-29T22:00:00+00:00 [running]> raspberrypi
+[2020-05-01 00:38:15,033] {bash_operator.py:82} INFO - Tmp dir root location: 
+ /tmp
+[2020-05-01 00:38:15,036] {bash_operator.py:105} INFO - Temporary script location: /tmp/airflowtmpy2uwdx2p/scrape_rumahbgtsfryj
+[2020-05-01 00:38:15,036] {bash_operator.py:115} INFO - Running command: cd ~/olx_crawler && python3 olx_scrape_rumah.py
+[2020-05-01 00:38:15,051] {bash_operator.py:122} INFO - Output:
+[2020-05-01 00:39:28,085] {bash_operator.py:126} INFO - Downloading html from https://www.olx.co.id/dijual-rumah-apartemen_c5158
+[2020-05-01 00:39:28,086] {bash_operator.py:126} INFO - Page downloaded
+[2020-05-01 00:39:28,087] {bash_operator.py:126} INFO - Start scraping from html tags...
+[2020-05-01 00:39:28,088] {bash_operator.py:126} INFO - Scraping from html tags completed
+[2020-05-01 00:39:28,088] {bash_operator.py:126} INFO - Successfully connected to new_olx.db
+[2020-05-01 00:39:28,088] {bash_operator.py:126} INFO - Start appending to rumah
+[2020-05-01 00:39:28,089] {bash_operator.py:126} INFO - Successfully appended data to rumah
+[2020-05-01 00:39:28,089] {bash_operator.py:126} INFO - Connection closed
+[2020-05-01 00:39:28,090] {bash_operator.py:126} INFO - Appending completed
+[2020-05-01 00:39:28,283] {bash_operator.py:130} INFO - Command exited with return code 0
+[2020-05-01 00:39:28,300] {taskinstance.py:1065} INFO - Marking task as SUCCESS.dag_id=olx_crawler, task_id=scrape_rumah, execution_date=20200429T220000, start_date=20200430T173814, end_date=20200430T173928
+[2020-05-01 00:39:31,652] {logging_mixin.py:112} INFO - [2020-05-01 00:39:31,651] {local_task_job.py:103} INFO - Task exited with return code 0

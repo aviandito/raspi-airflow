@@ -1,0 +1,45 @@
+[2020-05-01 10:44:45,279] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: olx_crawler.scrape_mobkas 2020-04-30T21:00:00+00:00 [queued]>
+[2020-05-01 10:44:45,325] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: olx_crawler.scrape_mobkas 2020-04-30T21:00:00+00:00 [queued]>
+[2020-05-01 10:44:45,326] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-05-01 10:44:45,326] {taskinstance.py:880} INFO - Starting attempt 1 of 4
+[2020-05-01 10:44:45,326] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-05-01 10:44:46,144] {taskinstance.py:900} INFO - Executing <Task(BashOperator): scrape_mobkas> on 2020-04-30T21:00:00+00:00
+[2020-05-01 10:44:46,156] {standard_task_runner.py:53} INFO - Started process 1124 to run task
+[2020-05-01 10:44:48,627] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: olx_crawler.scrape_mobkas 2020-04-30T21:00:00+00:00 [running]> raspberrypi
+[2020-05-01 10:44:48,674] {bash_operator.py:82} INFO - Tmp dir root location: 
+ /tmp
+[2020-05-01 10:44:48,676] {bash_operator.py:105} INFO - Temporary script location: /tmp/airflowtmps6ph1l3o/scrape_mobkasl2v8pyc5
+[2020-05-01 10:44:48,677] {bash_operator.py:115} INFO - Running command: cd ~/olx_crawler && python3 olx_scrape_mobkas.py
+[2020-05-01 10:44:48,692] {bash_operator.py:122} INFO - Output:
+[2020-05-01 10:48:13,475] {bash_operator.py:126} INFO - Downloading html from https://www.olx.co.id/mobil-bekas_c198/q-katana
+[2020-05-01 10:48:13,475] {bash_operator.py:126} INFO - Page downloaded
+[2020-05-01 10:48:13,476] {bash_operator.py:126} INFO - Start scraping from html tags...
+[2020-05-01 10:48:13,476] {bash_operator.py:126} INFO - Scraping from html tags completed
+[2020-05-01 10:48:13,477] {bash_operator.py:126} INFO - Successfully connected to new_olx.db
+[2020-05-01 10:48:13,477] {bash_operator.py:126} INFO - Start appending to mobkas
+[2020-05-01 10:48:13,477] {bash_operator.py:126} INFO - Successfully appended data to mobkas
+[2020-05-01 10:48:13,478] {bash_operator.py:126} INFO - Connection closed
+[2020-05-01 10:48:13,478] {bash_operator.py:126} INFO - Appending completed
+[2020-05-01 10:48:13,479] {bash_operator.py:126} INFO - Downloading html from https://www.olx.co.id/mobil-bekas_c198/q-e30
+[2020-05-01 10:48:13,479] {bash_operator.py:126} INFO - Page downloaded
+[2020-05-01 10:48:13,479] {bash_operator.py:126} INFO - Start scraping from html tags...
+[2020-05-01 10:48:13,479] {bash_operator.py:126} INFO - Scraping from html tags completed
+[2020-05-01 10:48:13,480] {bash_operator.py:126} INFO - Successfully connected to new_olx.db
+[2020-05-01 10:48:13,480] {bash_operator.py:126} INFO - Start appending to mobkas
+[2020-05-01 10:48:13,481] {bash_operator.py:126} INFO - Successfully appended data to mobkas
+[2020-05-01 10:48:13,481] {bash_operator.py:126} INFO - Connection closed
+[2020-05-01 10:48:13,481] {bash_operator.py:126} INFO - Appending completed
+[2020-05-01 10:48:13,482] {bash_operator.py:126} INFO - Downloading html from https://www.olx.co.id/mobil-bekas_c198/q-volvo-wagon
+[2020-05-01 10:48:13,482] {bash_operator.py:126} INFO - Page downloaded
+[2020-05-01 10:48:13,482] {bash_operator.py:126} INFO - Start scraping from html tags...
+[2020-05-01 10:48:13,482] {bash_operator.py:126} INFO - Scraping from html tags completed
+[2020-05-01 10:48:13,482] {bash_operator.py:126} INFO - Successfully connected to new_olx.db
+[2020-05-01 10:48:13,483] {bash_operator.py:126} INFO - Start appending to mobkas
+[2020-05-01 10:48:13,483] {bash_operator.py:126} INFO - Successfully appended data to mobkas
+[2020-05-01 10:48:13,483] {bash_operator.py:126} INFO - Connection closed
+[2020-05-01 10:48:13,483] {bash_operator.py:126} INFO - Appending completed
+[2020-05-01 10:48:13,684] {bash_operator.py:130} INFO - Command exited with return code 0
+[2020-05-01 10:48:13,705] {taskinstance.py:1065} INFO - Marking task as SUCCESS.dag_id=olx_crawler, task_id=scrape_mobkas, execution_date=20200430T210000, start_date=20200501T034445, end_date=20200501T034813
+[2020-05-01 10:48:14,767] {logging_mixin.py:112} INFO - [2020-05-01 10:48:14,767] {local_task_job.py:103} INFO - Task exited with return code 0
